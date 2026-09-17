@@ -16,8 +16,9 @@ public class Product {
         this.name = builder.name;
         this.category = builder.category;
         this.rating = builder.rating;
-        this.createdDate = LocalDate.now();
-        this.modifiedDate = LocalDate.now();
+        LocalDate buildDate = LocalDate.now();
+        this.createdDate = buildDate;
+        this.modifiedDate = buildDate;
     }
 
     public String getId() {
